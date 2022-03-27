@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="jogoDaVelha.css" type="text/css">
+</head>
+<body>
+
+    <div class="scoreboard">
+
+         <div class="scoreboard-content">
+            <div class="imgs-scoreboard"><img src="img/x.svg" style="width:150px;"><img src="img/circle.svg" style="width:120px;"></div>
+            <label class="scoreboard-title">Placar</label>
+            <hr>
+
+            <span class="scoreboard-points">
+                <span class="border-detail-left"></span>
+                <img src="img/x.svg" style="width:70px;">
+                <span class="points">0</span>
+                <span class="border-detail-right"></span>
+            </span>
+            
+            <span class="scoreboard-points">
+                <span class="border-detail-left"></span>
+                <img src="img/circle.svg" style="width:65px;">
+                <span class="points">0</span>
+                <span class="border-detail-right"></span>
+            </span>
+
+            <div class="button-content">
+                <button onclick="clearGame()">Zerar Jogo</button>
+                <button onclick="clearFields()">
+                    Limpar Campos
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="player-choice">
+            
+            <button class="x-choice" id="x-choice-id">
+                <img src="img/x.svg" style="width:80px;">
+                <span>Jogador 1</span>
+            </button>
+
+            <button class="circle-choice" id="circle-choice-id">
+                <img src="img/circle.svg" style="width:70px;">
+                <span>Jogador 2</span>
+            </button>
+
+        </div>
+
+        <div class="winners-historic">
+            <label class="winners-historic-title">Histórico</label>
+
+            <div class="winners-historic-content">
+
+            </div>
+        </div>
+
+
+        <button class="field-1 field" id="1" onclick="gameLogic('1')"></button>
+        <button class="field-2 field" id="2" onclick="gameLogic('2')"></button>
+        <button class="field-3 field" id="3" onclick="gameLogic('3')"></button>
+        <button class="field-4 field" id="4" onclick="gameLogic('4')"></button>
+        <button class="field-5 field" id="5" onclick="gameLogic('5')"></button>
+        <button class="field-6 field" id="6" onclick="gameLogic('6')"></button>
+        <button class="field-7 field" id="7" onclick="gameLogic('7')"></button>
+        <button class="field-8 field" id="8" onclick="gameLogic('8')"></button>
+        <button class="field-9 field" id="9" onclick="gameLogic('9')"></button>
+    </div>
+</body>
+<script src="jogoDaVelha.js"></script>
+</html>
