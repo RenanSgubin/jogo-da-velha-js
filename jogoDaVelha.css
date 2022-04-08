@@ -29,13 +29,13 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
+    width: 22%;
     height: 100vh;
     background-color: rgb(65, 143, 132);
 }
 
 .scoreboard-content {
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -50,13 +50,13 @@ button{
 }
 
 hr {
-    width: 350px;
+    width: 90%;
     border-color: rgb(34, 34, 34);
 }
 
 .scoreboard-points {
     position: relative;
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -86,7 +86,7 @@ hr {
 
 .button-content {
     position: absolute;
-    bottom: 100px;
+    bottom: 3%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -186,8 +186,8 @@ hr {
     position: absolute;
     bottom: 0%;
     right: 2%;
-    width: 350px;
-    height: 600px;
+    width: 20%;
+    height: 60vh;
     display: flex;
     align-items: center;
     flex-direction: column;
